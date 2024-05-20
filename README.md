@@ -1,7 +1,9 @@
 # CS361 Microservice A 
 
+## Setup
+To use the microservice, install the dependencies, Express, MongoDB, CORS, and Mongoose. Set up the database on MongodB for the microservice and copy and paste the generated connect string to the app.js file, line 12. To start the microservice, type "nodemon app.js". If the microservice has connected successfuly, a message should be printed to the terminal. 
+
 ## Request Data 
-This microservice uses Express, MongoDB, CORS, and Mongoose. Set up the database on MongodB for the microservice and copy and paste the generated connect string to the app.js file, line 12. To start the microservice, type "nodemon app.js". If the microservice has connected successfuly, a message should be printed to the terminal. 
 In order to request data, the user must fetch the api where the password is being generated. This is done in lines 9 through 32 in the index.html file. This file uses the fetch api to grab the generated password which was created in the app.js file. 
 
 ## Receive Data 
