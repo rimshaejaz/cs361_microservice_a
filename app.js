@@ -15,19 +15,19 @@ mongoose.connect('mongodb+srv://name:password@cluster0.rvuvigq.mongodb.net/', ()
 
 
 function generatePassword() {
-  let password = '';
-  let str = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ' +
-      'abcdefghijklmnopqrstuvwxyz' + '0123456789' + '!%&@#$';
-
-  for (let i = 1; i <= 10; i++) {
-      let char = Math.floor(Math.random()
-          * str.length + 1);
-
-      password += str.charAt(char)
-  }
-
-  return password;
-};
+    let password = '';
+    let symbol = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ' +
+        'abcdefghijklmnopqrstuvwxyz' + '0123456789' + '!%&@#$';
+ 
+    for (let i = 1; i <= 10; i++) {
+        let char = Math.floor(Math.random()
+            * symbol.length + 1);
+ 
+        password += symbol.charAt(char)
+    }
+ 
+    return password;
+}
 
 // create password 
 app.post('/', (req, res) => {
